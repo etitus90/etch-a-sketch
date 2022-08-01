@@ -16,9 +16,10 @@ button {
 }
 
 #container { 
-    background-color: white;
+    background-color: black;
     border: 1px solid black;
     margin: 0 auto;
     width: 50%;
-    height: auto;
+    display: flex;
+    aspect-ratio: 1 / 1;
 }
