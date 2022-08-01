@@ -1,5 +1,7 @@
 let sideLength = 16
 const container = document.getElementById('container')
+const clearBtn = document.getElementById('clear-btn')
+const dimensionsBtn = document.getElementById('dimensions-btn')
 
 for (let i = 0; i < sideLength; i++) {
     const divRow = document.createElement('div')
