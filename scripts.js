@@ -20,6 +20,7 @@ for (let i = 0; i < rows.length; i++) {
     for (let j = 0; j < sideLength; j++) {
         const div = document.createElement('div')
         div.classList.add('tile')
+        div.setAttribute('onmouseover', 'sketch(this)')
         div.style.cssText = `
         width: ${100 / sideLength}%;
         height: 100%;
@@ -31,4 +32,7 @@ for (let i = 0; i < rows.length; i++) {
     }
 }
 
+function sketch(tile) {
+    tile.classList.add('active')
+}
     
