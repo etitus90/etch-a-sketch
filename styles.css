@@ -16,9 +16,14 @@ button {
 }
 
 #container { 
-    background-color: black;
+    background-color: white;
     border: 1px solid black;
     margin: 0 auto;
     width: 50%;
     aspect-ratio: 1 / 1;
+    overflow: hidden;
+}
+
+.active {
+    background-color: black;
 }
