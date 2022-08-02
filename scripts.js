@@ -50,4 +50,8 @@ function sketch(tile) {
     tile.classList.add('active')
 }
 
+clearBtn.addEventListener('click', function(){
+    startSketch(sideLength);
+})
+
 startSketch(sideLength);
