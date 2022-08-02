@@ -5,7 +5,7 @@ const dimensionsBtn = document.getElementById('dimensions-btn')
 
 function startSketch(sideLength) {
     container.innerHTML = "";
-    
+
     for (let i = 0; i < sideLength; i++) {
         const divRow = document.createElement('div')
         divRow.classList.add('row')
@@ -39,7 +39,11 @@ function startSketch(sideLength) {
 dimensionsBtn.addEventListener('click', function(){
     let number = prompt("Set side length for square: ", "16")
     sideLength = parseInt(number)
-    startSketch(sideLength);
+    if (sideLength > 100 || sideLength < 1) {
+        number = alert("Error, value must be between 1 and 100.  Please try again.")
+    } else {
+        startSketch(sideLength);
+    }
 })
 
 function sketch(tile) {
